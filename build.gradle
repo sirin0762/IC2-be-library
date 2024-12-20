@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'org.innercircle'
-version = '0.0.1'
+version = '0.2.3'
 
 java {
 	toolchain {
@@ -34,8 +34,8 @@ dependencies {
 
 	annotationProcessor 'org.projectlombok:lombok:1.18.26'
 
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:3.3.0'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.11.4'
 }
 
 publishing {
@@ -43,7 +43,7 @@ publishing {
 		maven(MavenPublication) {
 			groupId = 'org.innercircle.opensource'
 			artifactId = 'jpa-query-logger'
-			version = '0.1.0'
+			version = '0.2.3'
 
 			from components.java
 		}
