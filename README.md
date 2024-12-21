@@ -9,7 +9,6 @@
 ### 설치 방법
 
 Maven
-1. 저장소에 jitpack 등록
 ```maven
 <repositories>
     <repository>
@@ -17,10 +16,7 @@ Maven
         <url>https://jitpack.io</url>
     </repository>
 </repositories>
-```
 
-2. 의존성 등록
-```maven
 <dependency>
     <groupId>com.github.sirin0762</groupId>
     <artifactId>IC2-be-library</artifactId>
@@ -29,16 +25,14 @@ Maven
 ```
 
 Gradle
-1. 저장소에 jitpack 등록
 ```gradle
 repositories {
     maven { url 'https://jitpack.io' }
 }
-```
 
-2. 의존성 등록
-```gradle
-implementation 'com.github.sirin0762:IC2-be-library:0.2.5'
+dependencies {
+    implementation 'com.github.sirin0762:IC2-be-library:0.2.5'
+}
 ```
 
 ### 사용방법
